@@ -1,0 +1,57 @@
+/* about-us-styles.css */
+
+.about-container {
+    max-width: 1920px;
+    position: absolute;
+    /* right: 0px; */
+    height: 300px;
+    padding: 20px;
+    background-color: #423A3A; /* Dark background */
+    color: #fff; /* White text color */
+  }
+  
+  #about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ff00; /* Bright green text color */
+  }
+  
+  #about-us p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards; /* Animation to fade in the text */
+   
+  }
+  
+  .highlight {
+    color: #b2ff59; /* Bright green highlight color */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    75% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .first{
+     height : 551px;
+     width: 100%;
+     background-image: url("Untitled design.jpg");
+     background-size: contain;
+  }
+
+  
+  

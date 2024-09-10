@@ -1,0 +1,195 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dark-theme {
+    background-color: #2a2828;
+    color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo{
+    display: flex;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-links li:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links li a:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+  
+  .hero{
+    height: 620px;
+    width : 100%;
+    background-color: aliceblue;
+    display: flex;
+  }
+  
+  .content{
+    height: 620px;
+    width: 50%;
+    background-color: black;
+    color: white;
+   
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #333;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffc107; /* Darken color on hover */
+  }
+   
+  .dark-theme{
+    position: sticky;
+  }
+
+  .image{
+    height: 620px;
+    width: 50%;
+    background-image: url("tr.jpg");
+    background-size: cover;
+  }
+
+  .pro{
+    padding-top: 180px;
+  }
+
+  .para{
+    position : absolute;
+    left: 160px;
+    bottom: 220px;
+  }
+
+   .hut{
+    position: absolute;
+    left: 40px;
+   }
+  .button{
+    position: absolute;
+    left: 170px;
+    bottom: 160px;
+  }
+  
+  .box1{
+    height:700px;
+    width: 100%;
+    background-color: #ffc107;
+    background-image: url("ace.jpg");
+    background-size:cover;
+  }
+
+  .important{
+    height: 700px;
+    width: 100%;
+    background-color: black;
+    background-image: url("Our partners.jpg");
+    background-size: cover;
+  }
+
+  .last{
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    color: rgb(32, 199, 88);
+  }
+
+  .im{
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    background-image: url("sym.jpg");
+    background-size: cover;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideInLeft 2s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    animation: slideInright 2s backwards;
+}
+
+@keyframes slideInright {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Energy Ball Animation</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+  }
+
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    opacity: 0.3;
+  }
+
+  .ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    box-shadow: 0 0 20px 10px #ffcc00;
+    animation: ballOrbit 6s linear infinite;
+  }
+
+  .energy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    opacity: 0.6;
+    animation: energyPulse 1s alternate infinite;
+  }
+
+  @keyframes ballOrbit {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(100px) translateY(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(100px) translateY(0);
+    }
+  }
+
+  @keyframes energyPulse {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="circle"></div>
+  <div class="ball">
+    <div class="energy"></div>
+  </div>
+</div>
+</body>
+</html>

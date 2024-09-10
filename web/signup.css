@@ -1,0 +1,78 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .containerrrr {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s; /* Adding transition effect for box-shadow */
+
+  }
+  
+  .containerrrr:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Green color shadow on hover */
+  }
+
+  .form {
+    text-align: center;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd700;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #ffc107;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  p a {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
